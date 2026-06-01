@@ -7,7 +7,36 @@ A command-line tool that scans C# source files and project folders for dead code
 ## Requirements
 - .NET 10.0 SDK or later
 
-## Build & Run
+## Installation (Global Tool)
+
+Install once and use `deadcode` from any folder on your machine:
+
+```bash
+dotnet pack
+dotnet tool install --global --add-source ./bin/Release deadcode-eliminator
+```
+
+Then use it anywhere:
+
+```bash
+deadcode --version
+deadcode --dry-run --report .
+```
+
+**To update after changes:**
+
+```bash
+dotnet pack
+dotnet tool update --global --add-source ./bin/Release deadcode-eliminator
+```
+
+**To uninstall:**
+
+```bash
+dotnet tool uninstall --global deadcode-eliminator
+```
+
+## Build & Run (without installing)
 
 ```bash
 dotnet build
@@ -46,28 +75,28 @@ Auto-fix issues are removed automatically. Advisory issues are flagged but left 
 
 ```bash
 # Scan a single file and fix in place (creates .bak backup)
-dotnet run -- MyClass.cs
+deadcode MyClass.cs
 
 # Scan an entire project folder recursively
-dotnet run -- src/
+deadcode src/
 
 # Dry run — show issues without writing anything
-dotnet run -- --dry-run --report --verbose MyClass.cs
+deadcode --dry-run --report --verbose MyClass.cs
 
 # Generate an HTML report
-dotnet run -- --dry-run --report-html report.html .
+deadcode --dry-run --report-html report.html .
 
 # Write cleaned output to a new file
-dotnet run -- -o MyClass.clean.cs MyClass.cs
+deadcode -o MyClass.clean.cs MyClass.cs
 
 # Top-level folder only, no subfolders
-dotnet run -- --no-recurse --report src/
+deadcode --no-recurse --report src/
 
 # Suppress specific checks
-dotnet run -- --keep-unused-vars --keep-commented MyClass.cs
+deadcode --keep-unused-vars --keep-commented MyClass.cs
 
 # No ANSI colors (for CI or piped output)
-dotnet run -- --no-color --dry-run --report MyClass.cs
+deadcode --no-color --dry-run --report MyClass.cs
 ```
 
 ---
@@ -104,7 +133,7 @@ Useful for CI pipelines — the build fails automatically if dead code is commit
 
 ```yaml
 - name: Check for dead code
-  run: dotnet run --project deadcode-eliminator -- --dry-run .
+  run: deadcode --dry-run .
 ```
 
 ---
@@ -126,5 +155,5 @@ Run with `--report-html report.html` to generate a self-contained HTML report in
 A `DeadCodeSample.cs` file is included in the repo containing 43 intentional dead code issues across all categories — useful for testing the tool.
 
 ```bash
-dotnet run -- --dry-run --report --verbose DeadCodeSample.cs
+deadcode --dry-run --report --verbose DeadCodeSample.cs
 ```

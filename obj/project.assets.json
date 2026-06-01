@@ -12,10 +12,10 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\Umar_\\Coding-Languages\\C#\\deadcode-eliminator\\DeadCodeEliminator.csproj",
-      "projectName": "deadcode",
+      "projectName": "deadcode-eliminator",
       "projectPath": "C:\\Users\\Umar_\\Coding-Languages\\C#\\deadcode-eliminator\\DeadCodeEliminator.csproj",
       "packagesPath": "C:\\Users\\Umar_\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Umar_\\Coding-Languages\\C#\\deadcode-eliminator\\obj\\",

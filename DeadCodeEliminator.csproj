@@ -6,5 +6,9 @@
     <Nullable>enable</Nullable>
     <AssemblyName>deadcode</AssemblyName>
     <RootNamespace>DeadCodeEliminator</RootNamespace>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>deadcode</ToolCommandName>
+    <PackageId>deadcode-eliminator</PackageId>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 </Project>
