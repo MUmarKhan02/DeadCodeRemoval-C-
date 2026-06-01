@@ -1,0 +1,14 @@
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\bin\Debug\net8.0\deadcode.exe
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\bin\Debug\net8.0\deadcode.deps.json
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\bin\Debug\net8.0\deadcode.runtimeconfig.json
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\bin\Debug\net8.0\deadcode.dll
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\bin\Debug\net8.0\deadcode.pdb
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\DeadCodeEliminator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\DeadCodeEliminator.AssemblyInfoInputs.cache
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\DeadCodeEliminator.AssemblyInfo.cs
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\DeadCodeEliminator.csproj.CoreCompileInputs.cache
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\deadcode.dll
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\refint\deadcode.dll
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\deadcode.pdb
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\DeadCodeEliminator.genruntimeconfig.cache
+C:\Users\Umar_\Coding-Languages\C#\deadcode-eliminator\obj\Debug\net8.0\ref\deadcode.dll
